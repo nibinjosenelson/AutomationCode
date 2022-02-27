@@ -1,0 +1,59 @@
+@RunScenario
+Feature: ToDo List Management TestCases
+
+  Scenario: ToDo page visible                # todo.feature:4
+    Given I am on my todo manage page        # ToDoTestCases.i_am_on_my_todo_manage_page()
+    Then I should see todos header displayed # ToDoTestCases.i_should_see_todos_header_displayed()
+
+  Scenario Outline: Enter ToDO items                  # todo.feature:8
+    When I input my "<toDoItems>" and enter
+    Then I should see "<toDoItems>" added to the list
+    And toDo count incremented
+
+    Examples: 
+
+  @RunScenario
+  Scenario Outline: Enter ToDO items              # todo.feature:14
+    When I input my "Haircut" and enter           # ToDoTestCases.i_input_my_and_enter(String)
+    Then I should see "Haircut" added to the list # ToDoTestCases.i_should_see_toDoItems_added_to_the_list(String)
+    And toDo count incremented                    # ToDoTestCases.todo_count_incremented()
+
+  @RunScenario
+  Scenario Outline: Enter ToDO items               # todo.feature:15
+    When I input my "Shopping" and enter           # ToDoTestCases.i_input_my_and_enter(String)
+    Then I should see "Shopping" added to the list # ToDoTestCases.i_should_see_toDoItems_added_to_the_list(String)
+    And toDo count incremented                     # ToDoTestCases.todo_count_incremented()
+
+  @RunScenario
+  Scenario Outline: Enter ToDO items              # todo.feature:16
+    When I input my "Meeting" and enter           # ToDoTestCases.i_input_my_and_enter(String)
+    Then I should see "Meeting" added to the list # ToDoTestCases.i_should_see_toDoItems_added_to_the_list(String)
+    And toDo count incremented                    # ToDoTestCases.todo_count_incremented()
+
+  @RunScenario
+  Scenario Outline: Enter ToDO items               # todo.feature:17
+    When I input my "Cleaning" and enter           # ToDoTestCases.i_input_my_and_enter(String)
+    Then I should see "Cleaning" added to the list # ToDoTestCases.i_should_see_toDoItems_added_to_the_list(String)
+    And toDo count incremented                     # ToDoTestCases.todo_count_incremented()
+
+  Scenario: ToDo item mark as complete             # todo.feature:19
+    When I click a toDoItem checkbox and enter     # ToDoTestCases.i_click_a_toDoItem_checkbox_and_enter()
+    Then I should see toDoItem marked as completed # ToDoTestCases.i_should_see_toDoItem_marked_as_completed()
+    And toDo count updated                         # ToDoTestCases.todo_count_updated()
+
+  Scenario: Filter Test Cases                  # todo.feature:24
+    When I click on Active filter              # ToDoTestCases.i_click_on_Active_filter()
+    Then I should see only not completed items # ToDoTestCases.i_should_see_only_not_completed_items()
+    When I click on Completed filter           # ToDoTestCases.i_click_on_Completed_filter()
+    Then I should see only completed items     # ToDoTestCases.i_should_see_only_completed_items()
+    When I click on All filter                 # ToDoTestCases.i_click_on_All_filter()
+    Then I should see all items in toDo list   # ToDoTestCases.i_should_see_all_items_in_toDo_list()
+
+  Scenario: Mark All as Complete           # todo.feature:32
+    When I click on Mark all as Complete   # ToDoTestCases.i_click_on_Mark_all_as_Complete()
+    Then I should not see any active items # ToDoTestCases.i_should_not_see_any_active_items()
+    And I should see all items completed   # ToDoTestCases.i_should_see_all_items_completed()
+
+  Scenario: Clear Completed               # todo.feature:37
+    When I click on Clear Completed       # ToDoTestCases.i_click_on_Clear_Completed()
+    Then I should not see completed items # ToDoTestCases.i_should_not_see_completed_items()

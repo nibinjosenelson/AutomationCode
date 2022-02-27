@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="82.577348">
+<testcase classname="ToDo List Management TestCases" name="ToDo page visible" time="0.198419">
+<system-out><![CDATA[Given I am on my todo manage page...........................................passed
+Then I should see todos header displayed....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ToDo List Management TestCases" name="Enter ToDO items" time="0.275651">
+<system-out><![CDATA[When I input my "Haircut" and enter.........................................passed
+Then I should see "Haircut" added to the list...............................passed
+And toDo count incremented..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ToDo List Management TestCases" name="Enter ToDO items 2" time="0.113738">
+<system-out><![CDATA[When I input my "Shopping" and enter........................................passed
+Then I should see "Shopping" added to the list..............................passed
+And toDo count incremented..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ToDo List Management TestCases" name="Enter ToDO items 3" time="0.120883">
+<system-out><![CDATA[When I input my "Meeting" and enter.........................................passed
+Then I should see "Meeting" added to the list...............................passed
+And toDo count incremented..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ToDo List Management TestCases" name="Enter ToDO items 4" time="0.118468">
+<system-out><![CDATA[When I input my "Cleaning" and enter........................................passed
+Then I should see "Cleaning" added to the list..............................passed
+And toDo count incremented..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ToDo List Management TestCases" name="ToDo item mark as complete" time="0.112282">
+<system-out><![CDATA[When I click a toDoItem checkbox and enter..................................passed
+Then I should see toDoItem marked as completed..............................passed
+And toDo count updated......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ToDo List Management TestCases" name="Filter Test Cases" time="15.422221">
+<system-out><![CDATA[When I click on Active filter...............................................passed
+Then I should see only not completed items..................................passed
+When I click on Completed filter............................................passed
+Then I should see only completed items......................................passed
+When I click on All filter..................................................passed
+Then I should see all items in toDo list....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ToDo List Management TestCases" name="Mark All as Complete" time="33.10561">
+<system-out><![CDATA[When I click on Mark all as Complete........................................passed
+Then I should not see any active items......................................passed
+And I should see all items completed........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ToDo List Management TestCases" name="Clear Completed" time="33.110076">
+<system-out><![CDATA[When I click on Clear Completed.............................................passed
+Then I should not see completed items.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

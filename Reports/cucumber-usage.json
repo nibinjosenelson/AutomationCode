@@ -1,0 +1,434 @@
+[
+  {
+    "source": "^toDo count incremented$",
+    "steps": [
+      {
+        "name": "toDo count incremented",
+        "aggregatedDurations": {
+          "average": 0.030681559,
+          "median": 0.028851551
+        },
+        "durations": [
+          {
+            "duration": 0.037967671,
+            "location": "todo.feature:11"
+          },
+          {
+            "duration": 0.028455671,
+            "location": "todo.feature:11"
+          },
+          {
+            "duration": 0.029247432,
+            "location": "todo.feature:11"
+          },
+          {
+            "duration": 0.027055464,
+            "location": "todo.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should not see any active items$",
+    "steps": [
+      {
+        "name": "I should not see any active items",
+        "aggregatedDurations": {
+          "average": 30.034856987,
+          "median": 30.034856987
+        },
+        "durations": [
+          {
+            "duration": 30.034856987,
+            "location": "todo.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see only not completed items$",
+    "steps": [
+      {
+        "name": "I should see only not completed items",
+        "aggregatedDurations": {
+          "average": 3.078505256,
+          "median": 3.078505256
+        },
+        "durations": [
+          {
+            "duration": 3.078505256,
+            "location": "todo.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Completed filter$",
+    "steps": [
+      {
+        "name": "I click on Completed filter",
+        "aggregatedDurations": {
+          "average": 3.069176568,
+          "median": 3.069176568
+        },
+        "durations": [
+          {
+            "duration": 3.069176568,
+            "location": "todo.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see all items in toDo list$",
+    "steps": [
+      {
+        "name": "I should see all items in toDo list",
+        "aggregatedDurations": {
+          "average": 3.066535982,
+          "median": 3.066535982
+        },
+        "durations": [
+          {
+            "duration": 3.066535982,
+            "location": "todo.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Mark all as Complete$",
+    "steps": [
+      {
+        "name": "I click on Mark all as Complete",
+        "aggregatedDurations": {
+          "average": 3.022230216,
+          "median": 3.022230216
+        },
+        "durations": [
+          {
+            "duration": 3.022230216,
+            "location": "todo.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Clear Completed$",
+    "steps": [
+      {
+        "name": "I click on Clear Completed",
+        "aggregatedDurations": {
+          "average": 3.055549885,
+          "median": 3.055549885
+        },
+        "durations": [
+          {
+            "duration": 3.055549885,
+            "location": "todo.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see only completed items$",
+    "steps": [
+      {
+        "name": "I should see only completed items",
+        "aggregatedDurations": {
+          "average": 3.022710093,
+          "median": 3.022710093
+        },
+        "durations": [
+          {
+            "duration": 3.022710093,
+            "location": "todo.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click a toDoItem checkbox and enter$",
+    "steps": [
+      {
+        "name": "I click a toDoItem checkbox and enter",
+        "aggregatedDurations": {
+          "average": 0.057845097,
+          "median": 0.057845097
+        },
+        "durations": [
+          {
+            "duration": 0.057845097,
+            "location": "todo.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see toDoItem marked as completed$",
+    "steps": [
+      {
+        "name": "I should see toDoItem marked as completed",
+        "aggregatedDurations": {
+          "average": 0.025595922,
+          "median": 0.025595922
+        },
+        "durations": [
+          {
+            "duration": 0.025595922,
+            "location": "todo.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I am on my todo manage page$",
+    "steps": [
+      {
+        "name": "I am on my todo manage page",
+        "aggregatedDurations": {
+          "average": 0.169352515,
+          "median": 0.169352515
+        },
+        "durations": [
+          {
+            "duration": 0.169352515,
+            "location": "todo.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on All filter$",
+    "steps": [
+      {
+        "name": "I click on All filter",
+        "aggregatedDurations": {
+          "average": 3.087893392,
+          "median": 3.087893392
+        },
+        "durations": [
+          {
+            "duration": 3.087893392,
+            "location": "todo.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^toDo count updated$",
+    "steps": [
+      {
+        "name": "toDo count updated",
+        "aggregatedDurations": {
+          "average": 0.028840723,
+          "median": 0.028840723
+        },
+        "durations": [
+          {
+            "duration": 0.028840723,
+            "location": "todo.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see todos header displayed$",
+    "steps": [
+      {
+        "name": "I should see todos header displayed",
+        "aggregatedDurations": {
+          "average": 0.029066172,
+          "median": 0.029066172
+        },
+        "durations": [
+          {
+            "duration": 0.029066172,
+            "location": "todo.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see all items completed$",
+    "steps": [
+      {
+        "name": "I should see all items completed",
+        "aggregatedDurations": {
+          "average": 0.048522917,
+          "median": 0.048522917
+        },
+        "durations": [
+          {
+            "duration": 0.048522917,
+            "location": "todo.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I input my \"([^\"]*)\" and enter$",
+    "steps": [
+      {
+        "name": "I input my \"Haircut\" and enter",
+        "aggregatedDurations": {
+          "average": 0.212209131,
+          "median": 0.212209131
+        },
+        "durations": [
+          {
+            "duration": 0.212209131,
+            "location": "todo.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "I input my \"Shopping\" and enter",
+        "aggregatedDurations": {
+          "average": 0.061890947,
+          "median": 0.061890947
+        },
+        "durations": [
+          {
+            "duration": 0.061890947,
+            "location": "todo.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "I input my \"Meeting\" and enter",
+        "aggregatedDurations": {
+          "average": 0.066716388,
+          "median": 0.066716388
+        },
+        "durations": [
+          {
+            "duration": 0.066716388,
+            "location": "todo.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "I input my \"Cleaning\" and enter",
+        "aggregatedDurations": {
+          "average": 0.067817696,
+          "median": 0.067817696
+        },
+        "durations": [
+          {
+            "duration": 0.067817696,
+            "location": "todo.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should not see completed items$",
+    "steps": [
+      {
+        "name": "I should not see completed items",
+        "aggregatedDurations": {
+          "average": 30.054526466,
+          "median": 30.054526466
+        },
+        "durations": [
+          {
+            "duration": 30.054526466,
+            "location": "todo.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see \"([^\"]*)\" added to the list$",
+    "steps": [
+      {
+        "name": "I should see \"Haircut\" added to the list",
+        "aggregatedDurations": {
+          "average": 0.025474296,
+          "median": 0.025474296
+        },
+        "durations": [
+          {
+            "duration": 0.025474296,
+            "location": "todo.feature:10"
+          }
+        ]
+      },
+      {
+        "name": "I should see \"Shopping\" added to the list",
+        "aggregatedDurations": {
+          "average": 0.023391743,
+          "median": 0.023391743
+        },
+        "durations": [
+          {
+            "duration": 0.023391743,
+            "location": "todo.feature:10"
+          }
+        ]
+      },
+      {
+        "name": "I should see \"Meeting\" added to the list",
+        "aggregatedDurations": {
+          "average": 0.024918745,
+          "median": 0.024918745
+        },
+        "durations": [
+          {
+            "duration": 0.024918745,
+            "location": "todo.feature:10"
+          }
+        ]
+      },
+      {
+        "name": "I should see \"Cleaning\" added to the list",
+        "aggregatedDurations": {
+          "average": 0.023594609,
+          "median": 0.023594609
+        },
+        "durations": [
+          {
+            "duration": 0.023594609,
+            "location": "todo.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Active filter$",
+    "steps": [
+      {
+        "name": "I click on Active filter",
+        "aggregatedDurations": {
+          "average": 0.097399786,
+          "median": 0.097399786
+        },
+        "durations": [
+          {
+            "duration": 0.097399786,
+            "location": "todo.feature:25"
+          }
+        ]
+      }
+    ]
+  }
+]

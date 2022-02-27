@@ -1,0 +1,636 @@
+<html><head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+.none {border:0px none black;}
+table{border:1px solid black;border-collapse: collapse;}
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}</style><title>Cucumber Steps Usage Report</title></head><body><h1>Cucumber Usage Statistics</h1><h2>Overview Graph</h2><p><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="400"><defs><filter id="f1" x="0" y="0" width="200%" height="200%"><feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" /><feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" /><feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter><radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%" fy="100%"><stop offset="0%" style="stop-color:white;stop-opacity:0.1" /><stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient><linearGradient id="grad2" cx="0%" cy="100%" r="150%" fx="0%" fy="100%"><stop offset="0%" style="stop-color:red;stop-opacity:0.7" /><stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" /><stop offset="100%" style="stop-color:green;stop-opacity:0.7" /></linearGradient></defs><rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)" /><line x1="40" y1="30" x2="40" y2="300" style="stroke:black;stroke-width:1" /><line x1="40" y1="300" x2="350" y2="300" style="stroke:black;stroke-width:1" /><polygon points="35,50 40,30 45,50" style="fill:black;stroke:black;stroke-width:1"/><polygon points="350,300 330,305 330,295" style="fill:black;stroke:black;stroke-width:1"/><polygon points="40,300 40,300 94,75 148,300 202,300 256,258 310,300" style="stroke:black;stroke-width:1"  fill="url(#grad2)" /><line x1="40" y1="300" x2="40" y2="305" style="stroke:black;stroke-width:1" /><text x="40" y="310" font-size = "8">0</text><line x1="94" y1="300" x2="94" y2="305" style="stroke:black;stroke-width:1" /><text x="94" y="310" font-size = "8">1</text><line x1="148" y1="300" x2="148" y2="305" style="stroke:black;stroke-width:1" /><text x="148" y="310" font-size = "8">2</text><line x1="202" y1="300" x2="202" y2="305" style="stroke:black;stroke-width:1" /><text x="202" y="310" font-size = "8">3</text><line x1="256" y1="300" x2="256" y2="305" style="stroke:black;stroke-width:1" /><text x="256" y="310" font-size = "8">4</text><line x1="40" y1="300" x2="35" y2="300" style="stroke:black;stroke-width:1" /><text x="35" y="300" transform="rotate(-90 35,300)" font-size = "8">0</text><line x1="40" y1="258" x2="35" y2="258" style="stroke:black;stroke-width:1" /><text x="35" y="258" transform="rotate(-90 35,258)" font-size = "8">3</text><line x1="40" y1="216" x2="35" y2="216" style="stroke:black;stroke-width:1" /><text x="35" y="216" transform="rotate(-90 35,216)" font-size = "8">6</text><line x1="40" y1="173" x2="35" y2="173" style="stroke:black;stroke-width:1" /><text x="35" y="173" transform="rotate(-90 35,173)" font-size = "8">9</text><line x1="40" y1="131" x2="35" y2="131" style="stroke:black;stroke-width:1" /><text x="35" y="131" transform="rotate(-90 35,131)" font-size = "8">12</text><line x1="40" y1="89" x2="35" y2="89" style="stroke:black;stroke-width:1" /><text x="35" y="89" transform="rotate(-90 35,89)" font-size = "8">15</text><line stroke-dasharray="10,10" x1="94.0" y1="30" x2="94.0" y2="300" style="stroke:yellow;stroke-width:3" /><line stroke-dasharray="10,10" x1="119" y1="30" x2="119" y2="300" style="stroke:red;stroke-width:3" /><rect x="60%" y="20%" width="28%" height="20%" stroke="black" stroke-width="1" fill="white" filter="url(#f1)" /><line x1="62%" y1="29%" x2="67%" y2="29%" stroke-dasharray="5,5" style="stroke:red;stroke-width:3" /><text x="69%" y="30%" font-weight = "bold" font-size = "12">Average: 1.5</text><line x1="62%" y1="34%" x2="67%" y2="34%" stroke-dasharray="5,5" style="stroke:yellow;stroke-width:3" /><text x="69%" y="35%" font-weight = "bold" font-size = "12">Median: 1</text><text x="60%" y="55%" font-weight = "bold" font-size = "40" fill="#BBBB00">32.1%</text><text x="66%" y="60%" font-weight = "bold" font-size = "16" fill="#BBBB00">Re-use</text><text x="120" y="330" font-weight = "bold" font-size = "14" >Step re-use count</text><text x="20" y="220" font-weight = "bold" font-size = "14" transform="rotate(-90 20,220)">Steps count</text></svg></p><h2>Overview Table</h2><p><table><tr><th rowspan="2"><a id="top">#</a></th><th rowspan="2">Expression</th><th rowspan="2">Occurences</th><th colspan="5">Duration</th></tr><tr><th>Average</th><th>Median</th><th>Minimal</th><th>Maximal</th><th>Total</th></tr><tr style="background:lightgreen"><td>1</td><td width="60%"><a href="#_5EtoDo-count-incremented_24">^toDo count incremented$</a></td><td>4</td><td>0.03s</td><td>0.03s</td><td>0.03s</td><td>0.04s</td><td>0.12s</td></tr><tr style="background:lightgreen"><td>2</td><td width="60%"><a href="#_5EI-input-my-_22_28_5B_5E_22_5D*_29_22-and-enter_24">^I input my "([^"]*)" and enter$</a></td><td>4</td><td>0.10s</td><td>0.07s</td><td>0.06s</td><td>0.21s</td><td>0.41s</td></tr><tr style="background:lightgreen"><td>3</td><td width="60%"><a href="#_5EI-should-see-_22_28_5B_5E_22_5D*_29_22-added-to-the-list_24">^I should see "([^"]*)" added to the list$</a></td><td>4</td><td>0.02s</td><td>0.02s</td><td>0.02s</td><td>0.03s</td><td>0.10s</td></tr><tr style="background:lightgreen"><td>4</td><td width="60%"><a href="#_5EI-should-not-see-any-active-items_24">^I should not see any active items$</a></td><td>1</td><td>30.03s</td><td>30.03s</td><td>30.03s</td><td>30.03s</td><td>30.03s</td></tr><tr style="background:lightgreen"><td>5</td><td width="60%"><a href="#_5EI-should-see-only-not-completed-items_24">^I should see only not completed items$</a></td><td>1</td><td>3.08s</td><td>3.08s</td><td>3.08s</td><td>3.08s</td><td>3.08s</td></tr><tr style="background:lightgreen"><td>6</td><td width="60%"><a href="#_5EI-click-on-Completed-filter_24">^I click on Completed filter$</a></td><td>1</td><td>3.07s</td><td>3.07s</td><td>3.07s</td><td>3.07s</td><td>3.07s</td></tr><tr style="background:gold"><td>7</td><td width="60%"><a href="#_5EI-should-see-all-items-in-toDo-list_24">^I should see all items in toDo list$</a></td><td>1</td><td>3.07s</td><td>3.07s</td><td>3.07s</td><td>3.07s</td><td>3.07s</td></tr><tr style="background:gold"><td>8</td><td width="60%"><a href="#_5EI-click-on-Mark-all-as-Complete_24">^I click on Mark all as Complete$</a></td><td>1</td><td>3.02s</td><td>3.02s</td><td>3.02s</td><td>3.02s</td><td>3.02s</td></tr><tr style="background:gold"><td>9</td><td width="60%"><a href="#_5EI-click-on-Clear-Completed_24">^I click on Clear Completed$</a></td><td>1</td><td>3.06s</td><td>3.06s</td><td>3.06s</td><td>3.06s</td><td>3.06s</td></tr><tr style="background:gold"><td>10</td><td width="60%"><a href="#_5EI-should-see-only-completed-items_24">^I should see only completed items$</a></td><td>1</td><td>3.02s</td><td>3.02s</td><td>3.02s</td><td>3.02s</td><td>3.02s</td></tr><tr style="background:gold"><td>11</td><td width="60%"><a href="#_5EI-click-a-toDoItem_C2_A0checkbox-and-enter_24">^I click a toDoItem checkbox and enter$</a></td><td>1</td><td>0.06s</td><td>0.06s</td><td>0.06s</td><td>0.06s</td><td>0.06s</td></tr><tr style="background:gold"><td>12</td><td width="60%"><a href="#_5EI-should-see-toDoItem-marked-as-completed_24">^I should see toDoItem marked as completed$</a></td><td>1</td><td>0.03s</td><td>0.03s</td><td>0.03s</td><td>0.03s</td><td>0.03s</td></tr><tr style="background:tomato"><td>13</td><td width="60%"><a href="#_5EI-am-on-my-todo-manage-page_24">^I am on my todo manage page$</a></td><td>1</td><td>0.17s</td><td>0.17s</td><td>0.17s</td><td>0.17s</td><td>0.17s</td></tr><tr style="background:tomato"><td>14</td><td width="60%"><a href="#_5EI-click-on-All-filter_24">^I click on All filter$</a></td><td>1</td><td>3.09s</td><td>3.09s</td><td>3.09s</td><td>3.09s</td><td>3.09s</td></tr><tr style="background:tomato"><td>15</td><td width="60%"><a href="#_5EtoDo-count-updated_24">^toDo count updated$</a></td><td>1</td><td>0.03s</td><td>0.03s</td><td>0.03s</td><td>0.03s</td><td>0.03s</td></tr><tr style="background:tomato"><td>16</td><td width="60%"><a href="#_5EI-should-see-todos-header-displayed_24">^I should see todos header displayed$</a></td><td>1</td><td>0.03s</td><td>0.03s</td><td>0.03s</td><td>0.03s</td><td>0.03s</td></tr><tr style="background:tomato"><td>17</td><td width="60%"><a href="#_5EI-should-see-all-items-completed_24">^I should see all items completed$</a></td><td>1</td><td>0.05s</td><td>0.05s</td><td>0.05s</td><td>0.05s</td><td>0.05s</td></tr><tr style="background:tomato"><td>18</td><td width="60%"><a href="#_5EI-should-not-see-completed-items_24">^I should not see completed items$</a></td><td>1</td><td>30.05s</td><td>30.05s</td><td>30.05s</td><td>30.05s</td><td>30.05s</td></tr><tr style="background:silver"><td>19</td><td width="60%"><a href="#_5EI-click-on-Active-filter_24">^I click on Active filter$</a></td><td>1</td><td>0.10s</td><td>0.10s</td><td>0.10s</td><td>0.10s</td><td>0.10s</td></tr></table></p><h1>Cucumber Usage Detailed Information</h1><p><h3><a id="_5EtoDo-count-incremented_24">^toDo count incremented$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>toDo count incremented</td><td> - </td><td> - </td></tr><tr><td></td><td>0.037967671</td><td>todo.feature:11</td></tr><tr><td></td><td>0.028455671</td><td>todo.feature:11</td></tr><tr><td></td><td>0.029247432</td><td>todo.feature:11</td></tr><tr><td></td><td>0.027055464</td><td>todo.feature:11</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.03s</td></tr><tr><th>Median</th><td>0.03s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>1.04</td></tr><tr><th>Minimum</th><td>0.03s</td></tr><tr><th>Maximum</th><td>0.04s</td></tr><tr><th>Total</th><td>0.12s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-not-see-any-active-items_24">^I should not see any active items$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should not see any active items</td><td> - </td><td> - </td></tr><tr><td></td><td>30.034856987</td><td>todo.feature:34</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>30.03s</td></tr><tr><th>Median</th><td>30.03s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>30.03s</td></tr><tr><th>Maximum</th><td>30.03s</td></tr><tr><th>Total</th><td>30.03s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-see-only-not-completed-items_24">^I should see only not completed items$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should see only not completed items</td><td> - </td><td> - </td></tr><tr><td></td><td>3.078505256</td><td>todo.feature:26</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>3.08s</td></tr><tr><th>Median</th><td>3.08s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>3.08s</td></tr><tr><th>Maximum</th><td>3.08s</td></tr><tr><th>Total</th><td>3.08s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-click-on-Completed-filter_24">^I click on Completed filter$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I click on Completed filter</td><td> - </td><td> - </td></tr><tr><td></td><td>3.069176568</td><td>todo.feature:27</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>3.07s</td></tr><tr><th>Median</th><td>3.07s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>3.07s</td></tr><tr><th>Maximum</th><td>3.07s</td></tr><tr><th>Total</th><td>3.07s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-see-all-items-in-toDo-list_24">^I should see all items in toDo list$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should see all items in toDo list</td><td> - </td><td> - </td></tr><tr><td></td><td>3.066535982</td><td>todo.feature:30</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>3.07s</td></tr><tr><th>Median</th><td>3.07s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>3.07s</td></tr><tr><th>Maximum</th><td>3.07s</td></tr><tr><th>Total</th><td>3.07s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-click-on-Mark-all-as-Complete_24">^I click on Mark all as Complete$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I click on Mark all as Complete</td><td> - </td><td> - </td></tr><tr><td></td><td>3.022230216</td><td>todo.feature:33</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>3.02s</td></tr><tr><th>Median</th><td>3.02s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>3.02s</td></tr><tr><th>Maximum</th><td>3.02s</td></tr><tr><th>Total</th><td>3.02s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-click-on-Clear-Completed_24">^I click on Clear Completed$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I click on Clear Completed</td><td> - </td><td> - </td></tr><tr><td></td><td>3.055549885</td><td>todo.feature:38</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>3.06s</td></tr><tr><th>Median</th><td>3.06s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>3.06s</td></tr><tr><th>Maximum</th><td>3.06s</td></tr><tr><th>Total</th><td>3.06s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-see-only-completed-items_24">^I should see only completed items$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should see only completed items</td><td> - </td><td> - </td></tr><tr><td></td><td>3.022710093</td><td>todo.feature:28</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>3.02s</td></tr><tr><th>Median</th><td>3.02s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>3.02s</td></tr><tr><th>Maximum</th><td>3.02s</td></tr><tr><th>Total</th><td>3.02s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-click-a-toDoItem_C2_A0checkbox-and-enter_24">^I click a toDoItem checkbox and enter$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I click a toDoItem checkbox and enter</td><td> - </td><td> - </td></tr><tr><td></td><td>0.057845097</td><td>todo.feature:20</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.06s</td></tr><tr><th>Median</th><td>0.06s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.06s</td></tr><tr><th>Maximum</th><td>0.06s</td></tr><tr><th>Total</th><td>0.06s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-see-toDoItem-marked-as-completed_24">^I should see toDoItem marked as completed$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should see toDoItem marked as completed</td><td> - </td><td> - </td></tr><tr><td></td><td>0.025595922</td><td>todo.feature:21</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.03s</td></tr><tr><th>Median</th><td>0.03s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.03s</td></tr><tr><th>Maximum</th><td>0.03s</td></tr><tr><th>Total</th><td>0.03s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-am-on-my-todo-manage-page_24">^I am on my todo manage page$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I am on my todo manage page</td><td> - </td><td> - </td></tr><tr><td></td><td>0.169352515</td><td>todo.feature:5</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.17s</td></tr><tr><th>Median</th><td>0.17s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.17s</td></tr><tr><th>Maximum</th><td>0.17s</td></tr><tr><th>Total</th><td>0.17s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-click-on-All-filter_24">^I click on All filter$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I click on All filter</td><td> - </td><td> - </td></tr><tr><td></td><td>3.087893392</td><td>todo.feature:29</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>3.09s</td></tr><tr><th>Median</th><td>3.09s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>3.09s</td></tr><tr><th>Maximum</th><td>3.09s</td></tr><tr><th>Total</th><td>3.09s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EtoDo-count-updated_24">^toDo count updated$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>toDo count updated</td><td> - </td><td> - </td></tr><tr><td></td><td>0.028840723</td><td>todo.feature:22</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.03s</td></tr><tr><th>Median</th><td>0.03s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.03s</td></tr><tr><th>Maximum</th><td>0.03s</td></tr><tr><th>Total</th><td>0.03s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-see-todos-header-displayed_24">^I should see todos header displayed$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should see todos header displayed</td><td> - </td><td> - </td></tr><tr><td></td><td>0.029066172</td><td>todo.feature:6</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.03s</td></tr><tr><th>Median</th><td>0.03s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.03s</td></tr><tr><th>Maximum</th><td>0.03s</td></tr><tr><th>Total</th><td>0.03s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-see-all-items-completed_24">^I should see all items completed$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should see all items completed</td><td> - </td><td> - </td></tr><tr><td></td><td>0.048522917</td><td>todo.feature:35</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.05s</td></tr><tr><th>Median</th><td>0.05s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.05s</td></tr><tr><th>Maximum</th><td>0.05s</td></tr><tr><th>Total</th><td>0.05s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-input-my-_22_28_5B_5E_22_5D*_29_22-and-enter_24">^I input my "([^"]*)" and enter$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I input my "Haircut" and enter</td><td> - </td><td> - </td></tr><tr><td></td><td>0.212209131</td><td>todo.feature:9</td></tr><tr><td>I input my "Shopping" and enter</td><td> - </td><td> - </td></tr><tr><td></td><td>0.061890947</td><td>todo.feature:9</td></tr><tr><td>I input my "Meeting" and enter</td><td> - </td><td> - </td></tr><tr><td></td><td>0.066716388</td><td>todo.feature:9</td></tr><tr><td>I input my "Cleaning" and enter</td><td> - </td><td> - </td></tr><tr><td></td><td>0.067817696</td><td>todo.feature:9</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.10s</td></tr><tr><th>Median</th><td>0.07s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>1.15</td></tr><tr><th>Minimum</th><td>0.06s</td></tr><tr><th>Maximum</th><td>0.21s</td></tr><tr><th>Total</th><td>0.41s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-not-see-completed-items_24">^I should not see completed items$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should not see completed items</td><td> - </td><td> - </td></tr><tr><td></td><td>30.054526466</td><td>todo.feature:39</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>30.05s</td></tr><tr><th>Median</th><td>30.05s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>30.05s</td></tr><tr><th>Maximum</th><td>30.05s</td></tr><tr><th>Total</th><td>30.05s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-should-see-_22_28_5B_5E_22_5D*_29_22-added-to-the-list_24">^I should see "([^"]*)" added to the list$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I should see "Haircut" added to the list</td><td> - </td><td> - </td></tr><tr><td></td><td>0.025474296</td><td>todo.feature:10</td></tr><tr><td>I should see "Shopping" added to the list</td><td> - </td><td> - </td></tr><tr><td></td><td>0.023391743</td><td>todo.feature:10</td></tr><tr><td>I should see "Meeting" added to the list</td><td> - </td><td> - </td></tr><tr><td></td><td>0.024918745</td><td>todo.feature:10</td></tr><tr><td>I should see "Cleaning" added to the list</td><td> - </td><td> - </td></tr><tr><td></td><td>0.023594609</td><td>todo.feature:10</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.02s</td></tr><tr><th>Median</th><td>0.02s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.13</td></tr><tr><th>Minimum</th><td>0.02s</td></tr><tr><th>Maximum</th><td>0.03s</td></tr><tr><th>Total</th><td>0.10s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5EI-click-on-Active-filter_24">^I click on Active filter$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>I click on Active filter</td><td> - </td><td> - </td></tr><tr><td></td><td>0.097399786</td><td>todo.feature:25</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.10s</td></tr><tr><th>Median</th><td>0.10s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.10s</td></tr><tr><th>Maximum</th><td>0.10s</td></tr><tr><th>Total</th><td>0.10s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p></p></body></html>

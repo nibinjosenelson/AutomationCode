@@ -1,0 +1,540 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "ToDo page visible",
+        "description": "",
+        "id": "todo-list-management-testcases;todo-page-visible",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 169352515,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on my todo manage page",
+            "match": {
+              "location": "ToDoTestCases.i_am_on_my_todo_manage_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29066172,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see todos header displayed",
+            "match": {
+              "location": "ToDoTestCases.i_should_see_todos_header_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Enter ToDO items",
+        "description": "",
+        "id": "todo-list-management-testcases;enter-todo-items;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 212209131,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input my \"Haircut\" and enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Haircut",
+                  "offset": 12
+                }
+              ],
+              "location": "ToDoTestCases.i_input_my_and_enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25474296,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see \"Haircut\" added to the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Haircut",
+                  "offset": 14
+                }
+              ],
+              "location": "ToDoTestCases.i_should_see_toDoItems_added_to_the_list(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37967671,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "toDo count incremented",
+            "match": {
+              "location": "ToDoTestCases.todo_count_incremented()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@RunScenario"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Enter ToDO items",
+        "description": "",
+        "id": "todo-list-management-testcases;enter-todo-items;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 61890947,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input my \"Shopping\" and enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shopping",
+                  "offset": 12
+                }
+              ],
+              "location": "ToDoTestCases.i_input_my_and_enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23391743,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see \"Shopping\" added to the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shopping",
+                  "offset": 14
+                }
+              ],
+              "location": "ToDoTestCases.i_should_see_toDoItems_added_to_the_list(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28455671,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "toDo count incremented",
+            "match": {
+              "location": "ToDoTestCases.todo_count_incremented()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@RunScenario"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Enter ToDO items",
+        "description": "",
+        "id": "todo-list-management-testcases;enter-todo-items;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 66716388,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input my \"Meeting\" and enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Meeting",
+                  "offset": 12
+                }
+              ],
+              "location": "ToDoTestCases.i_input_my_and_enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24918745,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see \"Meeting\" added to the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Meeting",
+                  "offset": 14
+                }
+              ],
+              "location": "ToDoTestCases.i_should_see_toDoItems_added_to_the_list(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29247432,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "toDo count incremented",
+            "match": {
+              "location": "ToDoTestCases.todo_count_incremented()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@RunScenario"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Enter ToDO items",
+        "description": "",
+        "id": "todo-list-management-testcases;enter-todo-items;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 67817696,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input my \"Cleaning\" and enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cleaning",
+                  "offset": 12
+                }
+              ],
+              "location": "ToDoTestCases.i_input_my_and_enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23594609,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see \"Cleaning\" added to the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cleaning",
+                  "offset": 14
+                }
+              ],
+              "location": "ToDoTestCases.i_should_see_toDoItems_added_to_the_list(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27055464,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "toDo count incremented",
+            "match": {
+              "location": "ToDoTestCases.todo_count_incremented()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@RunScenario"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "ToDo item mark as complete",
+        "description": "",
+        "id": "todo-list-management-testcases;todo-item-mark-as-complete",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 57845097,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click a toDoItem checkbox and enter",
+            "match": {
+              "location": "ToDoTestCases.i_click_a_toDoItem_checkbox_and_enter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25595922,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should see toDoItem marked as completed",
+            "match": {
+              "location": "ToDoTestCases.i_should_see_toDoItem_marked_as_completed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28840723,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "toDo count updated",
+            "match": {
+              "location": "ToDoTestCases.todo_count_updated()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Filter Test Cases",
+        "description": "",
+        "id": "todo-list-management-testcases;filter-test-cases",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97399786,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on Active filter",
+            "match": {
+              "location": "ToDoTestCases.i_click_on_Active_filter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3078505256,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I should see only not completed items",
+            "match": {
+              "location": "ToDoTestCases.i_should_see_only_not_completed_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3069176568,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on Completed filter",
+            "match": {
+              "location": "ToDoTestCases.i_click_on_Completed_filter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3022710093,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should see only completed items",
+            "match": {
+              "location": "ToDoTestCases.i_should_see_only_completed_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3087893392,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on All filter",
+            "match": {
+              "location": "ToDoTestCases.i_click_on_All_filter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3066535982,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should see all items in toDo list",
+            "match": {
+              "location": "ToDoTestCases.i_should_see_all_items_in_toDo_list()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Mark All as Complete",
+        "description": "",
+        "id": "todo-list-management-testcases;mark-all-as-complete",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3022230216,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click on Mark all as Complete",
+            "match": {
+              "location": "ToDoTestCases.i_click_on_Mark_all_as_Complete()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30034856987,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should not see any active items",
+            "match": {
+              "location": "ToDoTestCases.i_should_not_see_any_active_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48522917,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I should see all items completed",
+            "match": {
+              "location": "ToDoTestCases.i_should_see_all_items_completed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Clear Completed",
+        "description": "",
+        "id": "todo-list-management-testcases;clear-completed",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3055549885,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I click on Clear Completed",
+            "match": {
+              "location": "ToDoTestCases.i_click_on_Clear_Completed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30054526466,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should not see completed items",
+            "match": {
+              "location": "ToDoTestCases.i_should_not_see_completed_items()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ToDo List Management TestCases",
+    "description": "",
+    "id": "todo-list-management-testcases",
+    "keyword": "Feature",
+    "uri": "todo.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@RunScenario"
+      }
+    ]
+  }
+]

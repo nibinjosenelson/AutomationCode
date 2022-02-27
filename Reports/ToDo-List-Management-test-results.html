@@ -1,0 +1,62 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: __PAGESIZE__;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+ol a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
+</style>
+<title>Detailed Results Report</title>
+  </head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+  <h1>Overview</h1>
+<table><tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>%Passed</th></tr><tr><th>Features</th><td class="passed">1</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr><tr><th>Scenarios</th><td class="passed">9</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr><tr><th>Steps</th><td class="passed">28</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr></table><div><b>Overall Duration: 0h 01m 22s</b></div>
+<a id="top"></a><h1>Table of Contents</h1><ol><li> <span class="passed"><a href="#feature-2todo-list-management-testcases">ToDo List Management TestCases</a></span><ol><li> <span class="passed"><a href="#sc-4-todo-list-management-testcases;todo-page-visible">ToDo page visible</a></span></li><li> <span class="passed"><a href="#sc-14-todo-list-management-testcases;enter-todo-items;;2">Enter ToDO items</a></span></li><li> <span class="passed"><a href="#sc-15-todo-list-management-testcases;enter-todo-items;;3">Enter ToDO items</a></span></li><li> <span class="passed"><a href="#sc-16-todo-list-management-testcases;enter-todo-items;;4">Enter ToDO items</a></span></li><li> <span class="passed"><a href="#sc-17-todo-list-management-testcases;enter-todo-items;;5">Enter ToDO items</a></span></li><li> <span class="passed"><a href="#sc-19-todo-list-management-testcases;todo-item-mark-as-complete">ToDo item mark as complete</a></span></li><li> <span class="passed"><a href="#sc-24-todo-list-management-testcases;filter-test-cases">Filter Test Cases</a></span></li><li> <span class="passed"><a href="#sc-32-todo-list-management-testcases;mark-all-as-complete">Mark All as Complete</a></span></li><li> <span class="passed"><a href="#sc-37-todo-list-management-testcases;clear-completed">Clear Completed</a></span></li></ol></li></ol><h1>Detailed Results Report</h1><table width="700px"><tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-2todo-list-management-testcases">ToDo List Management TestCases</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 9</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 82.56s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td colspan="4"><b>Scenario:</b> <a id="sc-4-todo-list-management-testcases;todo-page-visible">ToDo page visible</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 2</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 0.20s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>Given </b> I am on my todo manage page</td><td width="100">0.17s</td></tr><tr class="passed"><td><b>Then </b> I should see todos header displayed</td><td width="100">0.03s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario Outline:</b> <a id="sc-14-todo-list-management-testcases;enter-todo-items;;2">Enter ToDO items</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 3</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 0.27s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> I input my &quot;Haircut&quot; and enter</td><td width="100">0.21s</td></tr><tr class="passed"><td><b>Then </b> I should see &quot;Haircut&quot; added to the list</td><td width="100">0.03s</td></tr><tr class="passed"><td><b>And </b> toDo count incremented</td><td width="100">0.04s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario Outline:</b> <a id="sc-15-todo-list-management-testcases;enter-todo-items;;3">Enter ToDO items</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 3</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 0.11s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> I input my &quot;Shopping&quot; and enter</td><td width="100">0.06s</td></tr><tr class="passed"><td><b>Then </b> I should see &quot;Shopping&quot; added to the list</td><td width="100">0.02s</td></tr><tr class="passed"><td><b>And </b> toDo count incremented</td><td width="100">0.03s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario Outline:</b> <a id="sc-16-todo-list-management-testcases;enter-todo-items;;4">Enter ToDO items</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 3</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 0.12s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> I input my &quot;Meeting&quot; and enter</td><td width="100">0.07s</td></tr><tr class="passed"><td><b>Then </b> I should see &quot;Meeting&quot; added to the list</td><td width="100">0.02s</td></tr><tr class="passed"><td><b>And </b> toDo count incremented</td><td width="100">0.03s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario Outline:</b> <a id="sc-17-todo-list-management-testcases;enter-todo-items;;5">Enter ToDO items</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 3</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 0.12s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> I input my &quot;Cleaning&quot; and enter</td><td width="100">0.07s</td></tr><tr class="passed"><td><b>Then </b> I should see &quot;Cleaning&quot; added to the list</td><td width="100">0.02s</td></tr><tr class="passed"><td><b>And </b> toDo count incremented</td><td width="100">0.03s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario:</b> <a id="sc-19-todo-list-management-testcases;todo-item-mark-as-complete">ToDo item mark as complete</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 3</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 0.11s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> I click a toDoItem&#160;checkbox and enter</td><td width="100">0.06s</td></tr><tr class="passed"><td><b>Then </b> I should see toDoItem marked as completed</td><td width="100">0.03s</td></tr><tr class="passed"><td><b>And </b> toDo count updated</td><td width="100">0.03s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario:</b> <a id="sc-24-todo-list-management-testcases;filter-test-cases">Filter Test Cases</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 6</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 15.42s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> I click on Active filter</td><td width="100">0.10s</td></tr><tr class="passed"><td><b>Then </b> I should see only not completed items</td><td width="100">3.08s</td></tr><tr class="passed"><td><b>When </b> I click on Completed filter</td><td width="100">3.07s</td></tr><tr class="passed"><td><b>Then </b> I should see only completed items</td><td width="100">3.02s</td></tr><tr class="passed"><td><b>When </b> I click on All filter</td><td width="100">3.09s</td></tr><tr class="passed"><td><b>Then </b> I should see all items in toDo list</td><td width="100">3.07s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario:</b> <a id="sc-32-todo-list-management-testcases;mark-all-as-complete">Mark All as Complete</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 3</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 33.10s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> I click on Mark all as Complete</td><td width="100">3.02s</td></tr><tr class="passed"><td><b>Then </b> I should not see any active items</td><td width="100">30.03s</td></tr><tr class="passed"><td><b>And </b> I should see all items completed</td><td width="100">0.05s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario:</b> <a id="sc-37-todo-list-management-testcases;clear-completed">Clear Completed</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 2</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 33.11s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> I click on Clear Completed</td><td width="100">3.06s</td></tr><tr class="passed"><td><b>Then </b> I should not see completed items</td><td width="100">30.05s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr></table></td></tr><tr><td colspan="5"></td></tr></table>
+	</body>
+</html>
